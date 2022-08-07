@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="icon"
@@ -32,7 +36,57 @@
       <div class="bg left-bg"></div>
       <div class="bg right-bg"></div>
       <div class="content__wrapper">
-        <div class="content__screenshot">screenshot</div>
+        <div class="screenshot__wrapper">
+          <header class="screenshot__header">
+            <div class="screenshot__header--inner"></div>
+            <div class="walker__wrapper">
+              <i class="las la-angle-left"></i>
+              <img src="./images/avatar.jpg" alt="" class="walker__photo" />
+              <div class="walker__info">
+                <h3 class="walker__name">Samuel Green</h3>
+                <p class="walker__availablity">Available to walk</p>
+              </div>
+              <i class="las la-ellipsis-v"></i>
+            </div>
+          </header>
+          <ul class="walker__chat">
+            <li class="walker__comment">
+              That sounds great. I'd be happy with that
+            </li>
+            <li>Could you send over some pictures of your dog, please?</li>
+            <li>
+              <img class="dog--images" src="./images/dog-image-1.jpg" alt="" />
+              <img class="dog--images" src="./images/dog-image-2.jpg" alt="" />
+              <img class="dog--images" src="./images/dog-image-3.jpg" alt="" />
+              Here are a few pictures. She's a happy girl!!
+            </li>
+            <li>Can you make it?</li>
+            <li class="walker__comment">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </li>
+            <li>
+              <div class="walker__rates">
+                <i class="lar la-circle"></i>
+                <p>30 minute walk</p>
+                <h3>$29</h3>
+              </div>
+            </li>
+            <li>
+              <div class="walker__rates">
+                <i class="lar la-circle"></i>
+                <p>60 minute walk</p>
+                <h3>$49</h3>
+              </div>
+            </li>
+            <li>
+              <div class="input__wrapper">
+                <input type="text" />
+                <i class="las la-chevron-circle-right"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="content__text">
           <h1 class="contet__text--heading">Simple booking</h1>
           <span>
@@ -44,31 +98,6 @@
         </div>
       </div>
     </main>
-    <!--   Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-   -->
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

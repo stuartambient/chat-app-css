@@ -57,6 +57,75 @@ body {
 
 .content__wrapper {
   display: flex;
-  width: 400px;
+  width: 800px;
   justify-items: center;
+}
+
+/* SCREENSHOT */
+
+.screenshot__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.screenshot__header {
+  width: 400px;
+  max-height: 100px;
+  background-color: gray;
+  /*  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.screenshot__header--inner {
+  width: 200px;
+  background-color: white;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.walker__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.walker__photo {
+  height: 4rem;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.header__icon {
+}
+
+.walker__photo {
+}
+
+.walker__name {
+}
+
+.walker__availability {
+}
+
+.walker__chat {
+  list-style: none;
+}
+
+.walker__rates {
+  background: linear-gradient(
+    to right,
+    var(--GRADIENT-1),
+    20%,
+    var(--GRADIENT-2)
+  );
 }
