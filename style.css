@@ -59,8 +59,17 @@ body {
 .content__wrapper {
   display: flex;
   width: 840px;
-  justify-items: center;
+  align-items: center;
   column-gap: 70px;
+}
+
+.content__text {
+  line-height: 1.9;
+}
+
+.content__text > h1 {
+  font-weight: 500;
+  line-height: 1.9;
 }
 
 /* SCREENSHOT */
