@@ -38,32 +38,41 @@
       <div class="content__wrapper">
         <div class="screenshot__wrapper">
           <header class="screenshot__header">
-            <div class="screenshot__header--inner"></div>
+            <!-- <div class="screenshot__header--inner"></div> -->
             <div class="walker__wrapper">
-              <i class="las la-angle-left"></i>
-              <img src="./images/avatar.jpg" alt="" class="walker__photo" />
-              <div class="walker__info">
-                <h3 class="walker__name">Samuel Green</h3>
-                <p class="walker__availablity">Available to walk</p>
+              <div class="walker__wrapper--inner"></div>
+              <div class="walker__elements">
+                <i class="las la-angle-left"></i>
+                <img src="./images/avatar.jpg" alt="" class="walker__photo" />
+                <div class="walker__info">
+                  <h3 class="walker__name">Samuel Green</h3>
+                  <p class="walker__availablity">Available to walk</p>
+                </div>
+                <i class="las la-ellipsis-v"></i>
               </div>
-              <i class="las la-ellipsis-v"></i>
             </div>
           </header>
           <ul class="walker__chat">
             <li class="walker__comment">
-              That sounds great. I'd be happy with that
+              <p>That sounds great. I'd be happy with that</p>
             </li>
-            <li>Could you send over some pictures of your dog, please?</li>
-            <li>
-              <img class="dog--images" src="./images/dog-image-1.jpg" alt="" />
-              <img class="dog--images" src="./images/dog-image-2.jpg" alt="" />
-              <img class="dog--images" src="./images/dog-image-3.jpg" alt="" />
-              Here are a few pictures. She's a happy girl!!
-            </li>
-            <li>Can you make it?</li>
             <li class="walker__comment">
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
+              <p>Could you send over some pictures of your dog, please?</p>
+            </li>
+            <li class="client__comment client__images">
+              <img class="dog-images" src="./images/dog-image-1.jpg" alt="" />
+              <img class="dog-images" src="./images/dog-image-2.jpg" alt="" />
+              <img class="dog-images" src="./images/dog-image-3.jpg" alt="" />
+              <p>Here are a few pictures. She's a happy girl!!</p>
+            </li>
+            <li class="client__comment">
+              <p>Can you make it?</p>
+            </li>
+            <li class="walker__comment">
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
             </li>
             <li>
               <div class="walker__rates">
@@ -79,11 +88,9 @@
                 <h3>$49</h3>
               </div>
             </li>
-            <li>
-              <div class="input__wrapper">
-                <input type="text" />
-                <i class="las la-chevron-circle-right"></i>
-              </div>
+            <li class="input__wrapper">
+              <input type="text" />
+              <i class="las la-chevron-circle-right"></i>
             </li>
           </ul>
         </div>
