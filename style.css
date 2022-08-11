@@ -4,6 +4,8 @@
   --FONT-FAMILY: 'Rubik', sans-serif;
 }
 
+/* CSS RESETS */
+
 *,
 *:before,
 *:after {
@@ -22,6 +24,7 @@ body {
   height: 100vh;
 }
 
+/* MAIN SECTION CONTAINS ALL */
 .main {
   align-items: center;
   display: flex;
@@ -37,6 +40,7 @@ body {
   }
 }
 
+/* PILL LIKE BACKGROUND DIVS */
 .bg {
   height: 87.5%;
   width: 480px;
@@ -54,10 +58,10 @@ body {
 }
 
 .left-bg {
-  border-bottom-left-radius: 300px;
-  border-bottom-right-radius: 300px;
   top: 0;
   left: -8rem;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
   background: linear-gradient(var(--GRADIENT-1), 20%, var(--GRADIENT-2));
 }
 
@@ -68,6 +72,8 @@ body {
   border-top-right-radius: 300px;
   background-color: #f5f3f7;
 }
+
+/* MAIN CONTENT INCLUDES APP SCREENSHOT AND COPY */
 
 .content__wrapper {
   display: flex;
@@ -84,9 +90,6 @@ body {
 
 @media screen and (max-width: 400px) {
   .content__wrapper {
-    /* width: 600px; */
-    /* flex-direction: column; */
-    /* opacity: 0.4; */
     column-gap: 0;
     width: 250px;
     flex-wrap: wrap;
@@ -95,6 +98,7 @@ body {
   }
 }
 
+/* THE COPY PARTS */
 .content__text {
   display: flex;
   flex-direction: column;
@@ -127,10 +131,9 @@ body {
 .content__text > p {
   color: hsl(270, 7%, 64%);
   line-height: 1.9;
-  /* font-size: 1.6rem; */
 }
 
-/* SCREENSHOT */
+/* APP SCREENSHOT */
 
 .screenshot__wrapper {
   display: flex;
@@ -148,6 +151,7 @@ body {
   display: flex;
 }
 
+/* OUTER DIV FOR WALKER NAME AND AVAILABILITY (PLUS THE ICONS) */
 .walker__wrapper {
   height: 75px;
   width: 250px;
@@ -165,6 +169,7 @@ body {
   border-top-right-radius: 20px;
 }
 
+/* USED AS A MASK FOR THE WRAPPER TO ACHEIVE THE BEVEL CUT ON THE TOP OF THE DIV */
 .walker__wrapper--inner {
   width: 150px;
   margin-left: 50px;
@@ -176,6 +181,8 @@ body {
   border-bottom-right-radius: 20px;
   z-index: -1;
 }
+
+/* THE CHAT PART (UL and LI's) AND VARIOUS STYLES DEPENDING ON THE CONTENT */
 
 .walker__chat {
   list-style: none;
@@ -198,6 +205,24 @@ body {
   border-radius: 10px;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* FLEXBOX DIV FOR THE WALKER NAME, AVAILABILITY ON THE ICONS */
+
+.walker__elements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.walker__elements > img {
+  height: 4rem;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .walker__rates > h3 {
@@ -251,22 +276,7 @@ body {
   background-color: white;
 }
 
-.walker__elements {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  margin-top: 3rem;
-  padding: 0 1rem;
-}
-
-.walker__elements > img {
-  height: 4rem;
-  width: auto;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
+/* WRAPPER FOR INPUT + SUBMIT BUTTON ICON */
 .input__wrapper {
   display: flex;
   height: 4rem;
