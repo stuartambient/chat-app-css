@@ -31,6 +31,12 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-width: 400px) {
+  .main {
+    overflow-y: visible;
+  }
+}
+
 .bg {
   height: 87.5%;
   width: 480px;
