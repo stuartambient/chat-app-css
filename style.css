@@ -33,7 +33,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .main {
-    overflow-y: visible;
+    height: auto;
   }
 }
 
@@ -91,7 +91,7 @@ body {
     width: 250px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
 }
 
